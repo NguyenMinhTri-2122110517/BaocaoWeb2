@@ -1,0 +1,125 @@
+.section-products {
+    padding: 40px 20px;
+    background: #f8f9fa;
+}
+
+.card-product-grid {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    height: 100%;
+    position: relative;
+}
+
+.card-product-grid:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.img-wrap {
+    position: relative;
+    padding-top: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.product-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 15px;
+    transition: transform 0.5s ease;
+}
+
+.card-product-grid:hover .product-image {
+    transform: scale(1.08);
+}
+
+.info-wrap {
+    padding: 20px;
+    text-align: center;
+    background: #fff;
+}
+
+.title-section {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.title-section::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: #e94560;
+}
+
+.title {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.title:hover {
+    color: #e94560;
+}
+
+.price {
+    color: #e94560;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.add-to-cart-btn {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    background: #e94560;
+    color: white;
+    padding: 12px;
+    text-align: center;
+    transition: bottom 0.3s ease;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.card-product-grid:hover .add-to-cart-btn {
+    bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .col-xl-3, .col-lg-3, .col-md-4, .col-6 {
+        padding: 10px;
+    }
+
+    .title-section {
+        font-size: 1.8rem;
+    }
+
+    .title {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 1.1rem;
+    }
+}

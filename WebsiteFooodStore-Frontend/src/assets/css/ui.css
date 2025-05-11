@@ -1,0 +1,19 @@
+/* General Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+.header-main {
+    border-bottom: 1px solid #e4e4e4;
+    padding: 15px 0;
+}
+
+/* Add more styles as needed */

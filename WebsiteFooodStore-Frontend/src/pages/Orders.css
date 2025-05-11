@@ -1,0 +1,120 @@
+.orders-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.orders-container h2 {
+    color: #333;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.no-orders {
+    text-align: center;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-orders p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.no-orders button {
+    padding: 0.8rem 1.5rem;
+    background: #e44d26;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.no-orders button:hover {
+    background: #c73e1d;
+}
+
+.orders-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.order-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.order-card:hover {
+    transform: translateY(-2px);
+}
+
+.order-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.order-header h3 {
+    color: #333;
+    margin: 0;
+}
+
+.order-date {
+    color: #666;
+    font-size: 0.9rem;
+}
+
+.order-info {
+    margin-bottom: 1rem;
+}
+
+.order-status {
+    color: #2ecc71;
+    font-weight: 500;
+}
+
+.order-total {
+    color: #e44d26;
+    font-weight: 500;
+}
+
+.payment-method {
+    color: #666;
+}
+
+.view-details-button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.view-details-button:hover {
+    background: #357abd;
+}
+
+@media (max-width: 768px) {
+    .orders-container {
+        margin: 1rem;
+    }
+    
+    .order-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+} 
